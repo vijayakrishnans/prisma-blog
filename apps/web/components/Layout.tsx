@@ -11,6 +11,7 @@ const Layout: React.FC<Props> = (props) => (
   <div>
     <Head>
       <title>{SITE_NAME}</title>
+      <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     </Head>
     <Header />
     <div className="layout">{props.children}</div>
