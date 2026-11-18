@@ -16,21 +16,21 @@ const Header: React.FC = () => {
         Feed
       </Link>
       <style jsx>{`
-        .bold {
+        .left :global(.bold) {
           font-weight: bold;
         }
 
-        a {
+        .left :global(a) {
           text-decoration: none;
           color: #000;
           display: inline-block;
         }
 
-        .left a[data-active="true"] {
+        .left :global(a[data-active="true"]) {
           color: gray;
         }
 
-        a + a {
+        .left :global(a + a) {
           margin-left: 1rem;
         }
       `}</style>
@@ -46,21 +46,21 @@ const Header: React.FC = () => {
           Feed
         </Link>
         <style jsx>{`
-          .bold {
+          .left :global(.bold) {
             font-weight: bold;
           }
 
-          a {
+          .left :global(a) {
             text-decoration: none;
             color: #000;
             display: inline-block;
           }
 
-          .left a[data-active="true"] {
+          .left :global(a[data-active="true"]) {
             color: gray;
           }
 
-          a + a {
+          .left :global(a + a) {
             margin-left: 1rem;
           }
         `}</style>
@@ -85,13 +85,13 @@ const Header: React.FC = () => {
           Log in
         </Link>
         <style jsx>{`
-          a {
+          .right :global(a) {
             text-decoration: none;
             color: #000;
             display: inline-block;
           }
 
-          a + a {
+          .right :global(a + a) {
             margin-left: 1rem;
           }
 
@@ -99,7 +99,7 @@ const Header: React.FC = () => {
             margin-left: auto;
           }
 
-          .right a {
+          .right :global(a) {
             border: 1px solid black;
             padding: 0.5rem 1rem;
             border-radius: 3px;
@@ -119,21 +119,21 @@ const Header: React.FC = () => {
           My drafts
         </Link>
         <style jsx>{`
-          .bold {
+          .left :global(.bold) {
             font-weight: bold;
           }
 
-          a {
+          .left :global(a) {
             text-decoration: none;
             color: #000;
             display: inline-block;
           }
 
-          .left a[data-active="true"] {
+          .left :global(a[data-active="true"]) {
             color: gray;
           }
 
-          a + a {
+          .left :global(a + a) {
             margin-left: 1rem;
           }
         `}</style>
@@ -151,7 +151,7 @@ const Header: React.FC = () => {
           Log out
         </button>
         <style jsx>{`
-          a {
+          .right :global(a) {
             text-decoration: none;
             color: #000;
             display: inline-block;
@@ -163,7 +163,7 @@ const Header: React.FC = () => {
             padding-right: 1rem;
           }
 
-          a + a {
+          .right :global(a + a) {
             margin-left: 1rem;
           }
 
@@ -171,7 +171,7 @@ const Header: React.FC = () => {
             margin-left: auto;
           }
 
-          .right a {
+          .right :global(a) {
             border: 1px solid black;
             padding: 0.5rem 1rem;
             border-radius: 3px;
